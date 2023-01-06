@@ -9,13 +9,13 @@ const HorizontalListTall = () => {
 
     const slideLeft = () => {
         var slider = document.getElementById('slider1');
-        slider.scrollLeft = slider.scrollLeft - slider.clientWidth;
+        slider.scrollLeft = slider.scrollLeft - slider.clientWidth-100;
         // console.log(slider.clientWidth);
     };
     
     const slideRight = () => {
         var slider = document.getElementById('slider1');
-        slider.scrollLeft = slider.scrollLeft + slider.clientWidth;
+        slider.scrollLeft = slider.scrollLeft + slider.clientWidth-100;
         // console.log(slider.clientWidth);
     };
 

@@ -6,6 +6,7 @@
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     max-width: 212px;
+    flex: 1 1 0%;
 }
 .horizontalcard:hover{
     transform: translateY(-15px) ;
@@ -20,6 +21,7 @@
     display: block;
     width: 212px;
     height: 120px;
+    border-radius: 8px;
     /* aspect-ratio: 16/9; */
     /* object-fit: scale-down; */
 }

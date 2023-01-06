@@ -25,6 +25,7 @@ img{
     width: 160px;
     object-fit: fill;
     /* overflow: hidden; */
+    border-radius: 8px;
 }
 .titleDiv{
    padding: 9px 0 12px 0;
