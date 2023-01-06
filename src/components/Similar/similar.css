@@ -1,0 +1,39 @@
+.swiper-button-next::after{
+    color: white;
+    margin-bottom: 25px;
+   }
+.swiper-button-prev::after{
+   color: white;
+   margin-bottom: 25px;
+}
+.parent-3{
+   background-color: rgba(18, 18, 18, 0.881);
+   color: white;
+   margin-top: -20px;
+}
+.parent-3 h2{
+   margin-left: 26px;
+   margin-bottom: 0;
+   font-weight: 600;
+}
+.similar-movie{
+   width: 96%;
+   display: flex;
+   gap: 10px;
+   margin: auto;
+}
+.similar-movie > div img{
+   border-radius: 7px;
+   width: 100%;
+}
+.similar > div > div p{
+   margin-top: 0px;
+}
+.similar > div > div{
+   padding-top: 15px;
+   display: inline-block;
+   transition: transform 0.5s;
+}
+.similar > div > div:hover{
+   transform: translateY(-15px);
+}
