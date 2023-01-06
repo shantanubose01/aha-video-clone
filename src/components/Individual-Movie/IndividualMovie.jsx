@@ -51,6 +51,10 @@ function IndividualMovie(props) {
                 </div>
             </div>
         </div>
+
+        {/* <------------------------------------------------------------> */}
+
+
         <div className='parent-2'>
             <div className='middle-child'>
                 <p className='tab-link active-link' id="cast-btn" onClick={ShowCast}>Cast</p>
@@ -97,10 +101,12 @@ function IndividualMovie(props) {
                     <li>Private Limited</li>
                 </div>
             </div>)
-            }
-            
-             
+            }  
         </div>
+
+        {/* <----------------------------------------------------------------> */}
+
+
         <div className='parent-3'>
             <h2>Similar to this</h2>
             <div className='similar-movie'>
@@ -173,6 +179,8 @@ function IndividualMovie(props) {
     </Swiper>
             </div>
         </div>
+
+        {/* <------------------------------------------------------------------> */}
 
         <div className='parent-4'>
             <h2>Popular Shows</h2>
