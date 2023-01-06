@@ -6,9 +6,31 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-// import 'swiper/swiper.scss';
+import { useState } from 'react';
 
 function IndividualMovie(props) {
+    const [cast,setCast] = useState(true);
+    const [detail,setDetail] = useState(false);
+    // const [active,setActive] = useState("active-link");
+
+
+
+    const ShowCast = (e)=>{
+       e.preventDefault();
+       setCast(true);
+       setDetail(false);
+       document.getElementById("detail-btn").classList.remove("active-link");
+        document.getElementById("cast-btn").classList.add("active-link");
+    }
+    const ShowDetails = ()=>{
+        setCast(false);
+        setDetail(true);
+        document.getElementById("cast-btn").classList.remove("active-link");
+        document.getElementById("detail-btn").classList.add("active-link");
+        
+    }
+
+
     return (
         <div className='boss'>
         <div className='parent'>
@@ -34,12 +56,13 @@ function IndividualMovie(props) {
         </div>
         <div className='parent-2'>
             <div className='middle-child'>
-                <p className='tab-link active'>Cast</p>
-                <p className='tab-link'>Details</p>
+                <p className='tab-link active-link' id="cast-btn" onClick={ShowCast}>Cast</p>
+                <p className='tab-link' id="detail-btn" onClick={ShowDetails}>Details</p>
             </div>
-            <div className="content">
+            {
+                cast && (<div className="content cast">
                 <div>
-                    <img src="https://image-resizer-cloud-api.akamaized.net/image/sangeetha/0-1x1.jpg?width=142" alt="cast"/>
+                    <img src="https://image-resizer-cloud-api.akamaized.net/image/sangeetha/0-1x1.jpg?width=142" alt="cast" width="70%"/>
                     <p>Sangeetha</p>
                 </div>
                 <div>
@@ -62,7 +85,23 @@ function IndividualMovie(props) {
                     <img src="https://image-resizer-cloud-api.akamaized.net/image/tanikella-bharani/0-1x1.jpg?width=142" alt="cast"/>
                     <p>Tanikella Bharani</p>
                 </div>
-            </div>
+            </div>)
+            }
+            {
+                detail && (<div className="content active-tab">
+                <div style={{color:"grey",marginRight:"5%"}}>
+                    <li>Director</li>
+                    <li>Studio</li>
+                </div>
+                <div>
+                    <li>Sai Kiran</li>
+                    <li>Swadharm</li>
+                    <li>Entertainment</li>
+                    <li>Private Limited</li>
+                </div>
+            </div>)
+            }
+            
              
         </div>
         <div className='parent-3'>

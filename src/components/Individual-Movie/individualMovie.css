@@ -72,9 +72,9 @@
     position: absolute;
     left:  0;
     bottom: -8px;
-    transition: 0.5s;
+    transition: 0.1s;
 }
-.tab-link.active::after{
+.tab-link.active-link::after{
     width: 120%;
 }
 .content{
@@ -82,14 +82,21 @@
     padding: 30px;
     gap: 10px;
 }
-.content img{
+.content > div img{
     width: 70%;
     border-radius: 10px;
 }
 .content p{
     margin-top: 0;
 }
-
+li{
+    list-style: none;
+    margin-bottom: 7%;
+}
+/* .content.active-tab{
+    display: block;
+ } */
+ .swiper-button{ color: red; }
 
 .parent-3{
     background-color: rgba(18, 18, 18, 0.881);
@@ -122,6 +129,7 @@
 .similar > div > div:hover{
     transform: translateY(-15px);
 }
+
 
 
 .parent-4{
