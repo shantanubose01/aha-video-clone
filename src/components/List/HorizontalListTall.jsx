@@ -3,7 +3,7 @@ import style from "./HorizontalListTall.module.css";
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import { useState } from "react";
 
-const HorizontalListTall = () => {
+const HorizontalListTall = (props) => {
     const [display, setDisplay] = useState("notdisplayed");
     let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 ,19,20];
 
@@ -29,8 +29,9 @@ const HorizontalListTall = () => {
         <div className={style.listwrapper}>
             
             <div className={style.horizontalList} id="slider1" 
-            onMouseEnter={()=>showArrow()}
-            onMouseLeave={()=>setDisplay("notdisplayed")}>
+            // onMouseEnter={()=>showArrow()}
+            // onMouseLeave={()=>setDisplay("notdisplayed")}
+            >
             {arr.map((e, i)=>{
                 return (
                     <VerticalCard 
