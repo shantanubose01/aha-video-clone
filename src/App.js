@@ -1,6 +1,5 @@
 
-import './App.css';
-import IndividualMovie from './components/IndividualMovie';
+import IndividualMovie from './components/Individual-Movie/IndividualMovie';
 
 function App() {
   return (

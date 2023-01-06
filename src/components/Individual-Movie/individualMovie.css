@@ -1,0 +1,53 @@
+.boss{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.css{
+    background-image: linear-gradient(75deg,#000 3.89%,transparent 94.59%);
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    display: var(--show-gradiant,block);
+}
+.parent{
+    position: relative;
+}
+.parent > img {
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.details{
+    position: absolute;
+    top: 0;
+    color: white;
+    margin: 8% 0 0 5%;
+}
+.btn-1{
+    border: 0.5px solid grey;
+    padding: 12px 30px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    background-color: rgba(17, 17, 17, 0.783);
+    color: white;
+}
+.btn-2{
+    border: none;
+    padding: 13px 30px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    background-color: rgb(252, 64, 31);
+    color: white;
+}
+.share{
+    width: 30px;
+    border-radius: 20px;
+    margin: 10px 0 -10px 0;
+}
+.parent-3{
+    background-color: rgba(18, 18, 18, 0.881);
+    color: white;
+}
