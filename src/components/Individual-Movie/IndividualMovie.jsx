@@ -11,8 +11,6 @@ import { useState } from 'react';
 function IndividualMovie(props) {
     const [cast,setCast] = useState(true);
     const [detail,setDetail] = useState(false);
-    // const [active,setActive] = useState("active-link");
-
 
 
     const ShowCast = (e)=>{
@@ -27,7 +25,6 @@ function IndividualMovie(props) {
         setDetail(true);
         document.getElementById("cast-btn").classList.remove("active-link");
         document.getElementById("detail-btn").classList.add("active-link");
-        
     }
 
 
