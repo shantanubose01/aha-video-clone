@@ -52,6 +52,7 @@
     background-color: rgba(18, 18, 18, 0.881);
     color: white;
     margin-top: -20px;
+    padding-top: 20px;
     
 }
 .middle-child{
@@ -60,6 +61,33 @@
 .tab-link{
     font-size: 18px;
     margin-left: 25px;
+    cursor: pointer;
+    position: relative;
+}
+.tab-link::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: orangered;
+    position: absolute;
+    left:  0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-link.active::after{
+    width: 120%;
+}
+.content{
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+}
+.content img{
+    width: 70%;
+    border-radius: 10px;
+}
+.content p{
+    margin-top: 0;
 }
 
 

@@ -34,8 +34,34 @@ function IndividualMovie(props) {
         </div>
         <div className='parent-2'>
             <div className='middle-child'>
-                <p className='tab-link'>Cast</p>
+                <p className='tab-link active'>Cast</p>
                 <p className='tab-link'>Details</p>
+            </div>
+            <div className="content">
+                <div>
+                    <img src="https://image-resizer-cloud-api.akamaized.net/image/sangeetha/0-1x1.jpg?width=142" alt="cast"/>
+                    <p>Sangeetha</p>
+                </div>
+                <div>
+                    <img src="https://image-resizer-cloud-api.akamaized.net/image/thiruveer/0-1x1.jpg?width=142" alt="cast"/>
+                    <p>Thiruveer</p>
+                </div>
+                <div>
+                    <img src="https://image-resizer-cloud-api.akamaized.net/image/mouryani/0-1x1.jpg?width=142" alt="cast"/>
+                    <p>Mouryani</p>
+                </div>
+                <div>
+                    <img src="https://image-resizer-cloud-api.akamaized.net/image/pavithra-lokesh/0-1x1.jpg?width=142" alt="cast"/>
+                    <p>Pavithra Lokesh</p>
+                </div>
+                <div>
+                    <img src="https://image-resizer-cloud-api.akamaized.net/image/manju-bhargavi/0-1x1.jpg?width=142" alt="cast"/>
+                    <p>Manju Bhargavi</p>
+                </div>
+                <div>
+                    <img src="https://image-resizer-cloud-api.akamaized.net/image/tanikella-bharani/0-1x1.jpg?width=142" alt="cast"/>
+                    <p>Tanikella Bharani</p>
+                </div>
             </div>
              
         </div>
