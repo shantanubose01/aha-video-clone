@@ -1,0 +1,131 @@
+body{
+    background-image: url(https://www.aha.video/backgroundcheck.975c41117a3dd7355f3b.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #242529;
+}
+.otp-logo{
+    min-width: 62px;
+    width: 120px;
+    min-height: 33px;
+    background-image: url(https://www.aha.video/aha-logo.db810aeaa42b356a86a7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+    margin-top: 20px;
+    left: 0%;
+}
+.otpCard{
+    background-color: #1a1d1e;
+    border: 1px solid #35393f;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 12px;
+    min-width: 552px;
+    width: 552px;
+    min-height: 31.3rem;
+    max-height: 33rem;
+    margin: 80px auto;
+}
+.otpCardCont{
+    width: 60%;
+    min-height: 490px;
+    margin: auto;
+    align-items: flex-start;
+     background-color: #1a1d1e;
+}
+.go-btn{
+    width: 40px;
+    top: 64px;
+    position:relative;
+}
+.otp-verify-text{
+    color: #fff;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.otp-text-dot{
+    color: #ff6d2e;
+}
+.otp-send-text{
+    margin-bottom: 20px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+}
+.otp-send-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 29px;
+}
+.mobile-text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ececec;
+    opacity: .5;
+}
+.change-btn{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 12px;
+    color: #fff;
+}
+.otp-input-cont{
+    width: 328px;
+    height: 46px;
+    background: linear-gradient(139.8deg,hsla(0,0%,100%,.2) 10.38%,hsla(0,0%,100%,0) 137.67%);
+    box-shadow: 0 4px 24px -1px rgb(0 0 0 / 20%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 32px;
+}
+.otp-submit{
+    display: flex;
+    width: 328px;
+    height: 40px;
+    border-radius: 25px;
+    background: linear-gradient(0deg,#b61a09 -86%,#ff6d2e);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 15px auto;
+
+}
+.otp-resend{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -.05em;
+    color: #fff;
+    width: 110px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 32px;
+}
+
+.terms-service{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #fff;
+    margin-top: 10px;
+}
+.terms-service > span{
+    color: #ff6d2e;
+}
