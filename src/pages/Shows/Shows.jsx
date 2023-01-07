@@ -1,74 +1,72 @@
-import HorizontalListTall from "../../components/List/HorizontalListTall";
-import HorizontalListWide from "../../components/List/HorizontalListWide";
-import style from "./Home.module.css";
+import ListShowsTall from "./ListShowsTall";
+import ListShowsWide from "./ListShowsWide";
 import Slider from "../../components/Carousel/Slider";
 
 const Shows = () => {
   let id = 0;
   return (
-    <div className={style.movie} id={style.movieDivID}>
+    <div>
       <Slider />
-      <HorizontalListTall
+      <ListShowsTall
         id={id++}
-        title="Trending"
+        title="Top aha Original Shows | First Ep Free"
         // url=" https://api.themoviedb.org/4/list/6564?page=1&api_key=584d1b1dc55719efed1f590d859903af"
-        url="https://api.themoviedb.org/3/movie/popular?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&page=1"
+        url="https://api.themoviedb.org/3/tv/popular?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&page=1"
       />
-      <HorizontalListTall
+      <ListShowsWide
         id={id++}
-        title="aha Original Films"
-        url="https://api.themoviedb.org/3/movie/popular?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&page=3"
+        title="Reality and Talks Shows"
+        url="https://api.themoviedb.org/3/tv/popular?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=te&page=2"
       />
-      <HorizontalListWide
+      <ListShowsTall
         id={id++}
         title="New Releases"
         url="https://api.themoviedb.org/3/movie/now_playing?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=te&page=1"
       />
-
-      <HorizontalListTall
+      <ListShowsWide
         id={id++}
-        title="All Time Block Busters"
-        url="https://api.themoviedb.org/3/movie/top_rated?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=hi&page=1"
+        title="Agent Anand Santosh"
+        url="https://api.themoviedb.org/3/tv/206379/season/1?api_key=5b2334617cd63be51871f0ff36fb3b3c&language=en-US"
       />
-      <HorizontalListTall
+      <ListShowsTall
         id={id++}
-        title="Latest Telegu Movies"
-        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&year=2022"
+        title="Korean Drama in Telugu"
+        url="https://api.themoviedb.org/3/tv/popular?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=ko&page=1"
       />
-      <HorizontalListTall
+      <ListShowsTall
         id={id++}
-        title="Latest HollyWood Movies in Tamil"
-        url="https://api.themoviedb.org/3/trending/movie/week?api_key=5b2334617cd63be51871f0ff36fb3b3c"
+        title="Japanese Drama in Telugu"
+        url="https://api.themoviedb.org/3/tv/popular?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=ja&page=1"
       />
-
-      <HorizontalListTall
+      <ListShowsTall
         id={id++}
-        title="Old is Gold"
-        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ta&year=1975"
+        title="Sam Jam"
+        url="https://api.themoviedb.org/3/tv/117122/season/1?api_key=5b2334617cd63be51871f0ff36fb3b3c&language=en-US"
       />
-
-      <HorizontalListTall
+      <ListShowsWide
         id={id++}
-        title="2021 Top Movies"
-        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ta&year=2021"
+        title="Parampara"
+        url="https://api.themoviedb.org/3/tv/153637/season/1?api_key=5b2334617cd63be51871f0ff36fb3b3c&language=en-US"
       />
-      <HorizontalListTall
+      <ListShowsTall
         id={id++}
-        title="Korean Movies in Tamil"
-        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ko&year=2015"
+        title="Top Hindi Shows"
+        url="https://api.themoviedb.org/3/tv/top_rated?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=hi&page=1"
       />
-
-      <HorizontalListTall
+      <ListShowsTall
         id={id++}
-        title="Tamil Tv Shows "
-        url="https://api.themoviedb.org/3/discover/tv?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&year=2019"
+        title="Top Urdu Shows in Telugu"
+        url="https://api.themoviedb.org/3/tv/popular?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=ur&page=1"
       />
 
-      <HorizontalListWide
+      <ListShowsTall
         id={id++}
-        title="Popular in Telugu"
-        url="https://api.themoviedb.org/3/movie/popular?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=te&page=2"
+        title="Agent Anand Santosh"
+        url="https://api.themoviedb.org/3/tv/206379/season/1?api_key=5b2334617cd63be51871f0ff36fb3b3c&language=en-US"
       />
+      
+
+      
     </div>
   );
 };
