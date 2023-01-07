@@ -60,7 +60,6 @@ function IndividualShow(props) {
             </div>
         </div>
 
-        {/* <------------------------------------------------------------> */}
 
 
         <div className='parent--2'>

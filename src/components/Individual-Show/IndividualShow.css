@@ -81,3 +81,12 @@
     margin-top: 0;
     font-size: 13px;
 }
+li{
+    list-style: none;
+    margin-bottom: 7%;
+}
+.det{
+    display: flex;
+    padding: 30px;
+    gap: 25px;
+}
