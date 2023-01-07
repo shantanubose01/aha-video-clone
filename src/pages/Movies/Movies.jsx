@@ -2,48 +2,61 @@ import HorizontalListTall from "../../components/List/HorizontalListTall";
 import HorizontalListWide from "../../components/List/HorizontalListWide";
 import style from "./Home.module.css";
 import Slider from "../../components/Carousel/Slider";
-import { useState } from "react";
 
 const Movies = (props) => {
-    let id = 0;
+  let id = 0;
   return (
-    <div className={style.movie} id={style.homeDivID}>
+    <div className={style.movie} id={style.movieDivID}>
       <Slider />
       <HorizontalListTall
         id={id++}
-        title="New Releases"
+        title="Trending"
         // url=" https://api.themoviedb.org/4/list/6564?page=1&api_key=584d1b1dc55719efed1f590d859903af"
-        url="https://api.themoviedb.org/3/movie/now_playing?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ta"
+        url="https://api.themoviedb.org/3/movie/popular?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&page=1"
       />
       <HorizontalListTall
         id={id++}
-        title="Blockbusters on aha"
+        title="aha Original Films"
         url="https://api.themoviedb.org/3/movie/popular?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&page=3"
       />
-      <HorizontalListTall
+      <HorizontalListWide
         id={id++}
-        title="Latest HollyWood Movies in Tamil"
-        url="https://api.themoviedb.org/4/discover/movie?sort_by=popularity.desc&api_key=1cf50e6248dc270629e802686245c2c8"
+        title="New Releases"
+        url="https://api.themoviedb.org/3/movie/now_playing?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=te&page=1"
       />
-      <HorizontalListWide 
+
+
+<HorizontalListTall
         id={id++}
-        title="Popular in Telugu"
-        url="https://api.themoviedb.org/3/movie/popular?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=te&page=1"
+        title="All Time Block Busters"
+        url="https://api.themoviedb.org/3/movie/top_rated?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=hi&page=1"
       />
       <HorizontalListTall
         id={id++}
         title="Latest Telegu Movies"
-        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&year=2019"
+        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&year=2022"
       />
       <HorizontalListTall
         id={id++}
-        title="Tamil Movies"
-        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ta&year=2010"
+        title="Latest HollyWood Movies in Tamil"
+        url="https://api.themoviedb.org/3/trending/movie/week?api_key=5b2334617cd63be51871f0ff36fb3b3c"
+      />
+      
+      <HorizontalListTall
+        id={id++}
+        title="Old is Gold"
+        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ta&year=1975"
+      />
+
+      <HorizontalListTall
+        id={id++}
+        title="2021 Top Movies"
+        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ta&year=2021"
       />
       <HorizontalListTall
         id={id++}
         title="Korean Movies in Tamil"
-        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ko&year=2010"
+        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ko&year=2015"
       />
 
       <HorizontalListTall
@@ -52,19 +65,14 @@ const Movies = (props) => {
         url="https://api.themoviedb.org/3/discover/tv?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&year=2019"
       />
 
-      <HorizontalListTall
-        id={id++}
-        title="For Prabhas Fans"
-        url=" https://api.themoviedb.org/4/list/6564?page=1&api_key=584d1b1dc55719efed1f590d859903af"
-        // url="https://api.themoviedb.org/3/movie/now_playing?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ta"
-      />
-      <HorizontalListWide 
+      <HorizontalListWide
         id={id++}
         title="Popular in Telugu"
         url="https://api.themoviedb.org/3/movie/popular?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=te&page=2"
       />
     </div>
   );
-}
- 
-export default Movies;props
+};
+
+export default Movies;
+props;
