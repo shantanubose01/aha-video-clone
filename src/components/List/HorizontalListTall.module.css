@@ -58,6 +58,7 @@
     /* z-index: 10; */
     color: #fffeee;
     transform: scale(2);
+    opacity: 50%;
 }
 .righticon{
     height: 20px;
@@ -70,9 +71,10 @@
     /* z-index: 10; */
     color: #fffeee;
     transform: scale(2);
+    opacity: 50%;
 }
-.rightarrow:hover{
-    /* content: ""; */
+.righticon:hover, .lefticon:hover{
+    opacity: 90%;
 }
 .leftarrowDiv, .rightarrowDiv{
     /* display: none; */
@@ -85,14 +87,14 @@
 .leftarrowDiv{
     left: 0;
 }
-.leftarrowDiv{
-    background: linear-gradient(to right, #444 0%, transparent 100%);
+.leftarrowDiv:hover{
+    background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, transparent 100%);
 }
 .rightarrowDiv{
     right: 0;
 }
-.rightarrowDiv{
-    background: linear-gradient(to left, #444 0%, transparent 100%);
+.rightarrowDiv:hover{
+    background: linear-gradient(to left, rgba(0,0,0,0.5)0%, transparent 100%);
 }
 .displayed{
     display: inline-block;
