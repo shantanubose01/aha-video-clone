@@ -1,12 +1,11 @@
 import HorizontalListTall from "../../components/List/HorizontalListTall";
 import HorizontalListWide from "../../components/List/HorizontalListWide";
-import style from "./Home.module.css";
 import Slider from "../../components/Carousel/Slider";
 
 const Movies = (props) => {
   let id = 0;
   return (
-    <div className={style.movie} id={style.movieDivID}>
+    <div>
       <Slider />
       <HorizontalListTall
         id={id++}
@@ -25,8 +24,7 @@ const Movies = (props) => {
         url="https://api.themoviedb.org/3/movie/now_playing?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=te&page=1"
       />
 
-
-<HorizontalListTall
+      <HorizontalListTall
         id={id++}
         title="All Time Block Busters"
         url="https://api.themoviedb.org/3/movie/top_rated?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=hi&page=1"
@@ -41,11 +39,11 @@ const Movies = (props) => {
         title="Latest HollyWood Movies in Tamil"
         url="https://api.themoviedb.org/3/trending/movie/week?api_key=5b2334617cd63be51871f0ff36fb3b3c"
       />
-      
+
       <HorizontalListTall
         id={id++}
         title="Old is Gold"
-        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ta&year=1975"
+        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=hi&year=1950"
       />
 
       <HorizontalListTall
@@ -53,15 +51,15 @@ const Movies = (props) => {
         title="2021 Top Movies"
         url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ta&year=2021"
       />
-      <HorizontalListTall
+      <HorizontalListWide
         id={id++}
-        title="Korean Movies in Tamil"
-        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ko&year=2015"
+        title="Turkish Movies in Tamil"
+        url="https://api.themoviedb.org/3/discover/movie?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=tr&year=2020"
       />
 
       <HorizontalListTall
         id={id++}
-        title="Tamil Tv Shows "
+        title="Action"
         url="https://api.themoviedb.org/3/discover/tv?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&year=2019"
       />
 
@@ -75,4 +73,3 @@ const Movies = (props) => {
 };
 
 export default Movies;
-props;
