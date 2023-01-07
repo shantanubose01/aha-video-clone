@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import "./slider.css";
 
 const slideStyles = {
-  width: "100%",
+  width: "100vw",
   height: "100%",
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -27,7 +28,6 @@ const leftArrowStyles = {
   color: "#fff",
   zIndex: 1,
   cursor: "pointer",
-
 };
 
 const sliderStyles = {
@@ -38,7 +38,7 @@ const sliderStyles = {
 const dotsContainerStyles = {
   display: "flex",
   justifyContent: "center",
-  color:"white"
+  color: "white",
 };
 
 const dotStyle = {
@@ -91,7 +91,7 @@ const ImageSlider = ({ slides, parentWidth }) => {
     }
     timerRef.current = setTimeout(() => {
       goToNext();
-    },2000);
+    }, 2000);
 
     return () => clearTimeout(timerRef.current);
   }, [goToNext]);
@@ -107,7 +107,10 @@ const ImageSlider = ({ slides, parentWidth }) => {
         </div>
       </div>
       <div style={slidesContainerOverflowStyles}>
-        <div style={getSlidesContainerStylesWithWidth()}>
+        <div
+          style={getSlidesContainerStylesWithWidth()}
+          className="img-container"
+        >
           {slides.map((_, slideIndex) => (
             <div
               key={slideIndex}

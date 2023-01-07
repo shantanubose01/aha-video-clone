@@ -1,13 +1,22 @@
-import React from 'react'
+import React from "react";
 import ImageSlider from "./ImageSlider";
+import './slider.css';
 
 export default function Slider() {
-  const slides=[   
-  { url: "http://localhost:3001/Images/img1.jpg", title: "image1" },
-  { url: "http://localhost:3001/Images/img2.jpg", title: "image2" },
-  { url: "http://localhost:3001/Images/img3.jpg", title: "image3" },
-  { url: "http://localhost:3001/Images/img4.jpg", title: "image4" },
-  { url: "http://localhost:3001/Images/img5.jpg", title: "image5" },]
+  // const slides=[
+  // { url: "http://localhost:3001/Images/img1.jpg", title: "image1" },
+  // { url: "http://localhost:3001/Images/img2.jpg", title: "image2" },
+  // { url: "http://localhost:3001/Images/img3.jpg", title: "image3" },
+  // { url: "http://localhost:3001/Images/img4.jpg", title: "image4" },
+  // { url: "http://localhost:3001/Images/img5.jpg", title: "image5" },]
+
+  const slides = [
+    { url: "Images/img1.jpg", title: "image1" },
+    { url: "Images/img2.jpg", title: "image2" },
+    { url: "Images/img3.jpg", title: "image3" },
+    { url: "Images/img4.jpg", title: "image4" },
+    { url: "Images/img5.jpg", title: "image5" },
+  ];
 
   const containerStyles = {
     width: "100%",
@@ -15,11 +24,11 @@ export default function Slider() {
     margin: "0 auto",
   };
 
-  return(
+  return (
     <div>
-    <div style={containerStyles}>
-      <ImageSlider slides={slides} parentWidth={1400} />
+      <div style={containerStyles} className="slider-wrapper">
+        <ImageSlider slides={slides} parentWidth={1400} />
+      </div>
     </div>
-  </div>
-  )
+  );
 }
