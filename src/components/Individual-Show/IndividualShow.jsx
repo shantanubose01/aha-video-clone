@@ -9,31 +9,31 @@ function IndividualShow(props) {
     const [detail,setDetail] = useState(false);
     const [epi,setEpi] = useState(true);
 
-    const ShowEpisode = ()=>{
+    const openEpisode = ()=>{
         setCast(false);
         setDetail(false);
         setEpi(true);
-        document.getElementById("cast-btn").classList.remove("active");
-        document.getElementById("detail-btn").classList.remove("active");
-        document.getElementById("epi-btn").classList.add("active");
+        document.getElementById("cast-btun").classList.remove("active");
+        document.getElementById("detail-btun").classList.remove("active");
+        document.getElementById("epi-btun").classList.add("active");
     }
 
-    const ShowCast = (e)=>{
+    const openCast = (e)=>{
        e.preventDefault();
        setCast(true);
        setEpi(false);
        setDetail(false);
-       document.getElementById("detail-btn").classList.remove("active");
-       document.getElementById("epi-btn").classList.remove("active");
-        document.getElementById("cast-btn").classList.add("active");
+       document.getElementById("detail-btun").classList.remove("active");
+       document.getElementById("epi-btun").classList.remove("active");
+        document.getElementById("cast-btun").classList.add("active");
     }
-    const ShowDetails = ()=>{
+    const openDetails = ()=>{
         setCast(false);
         setDetail(true);
         setEpi(false);
-        document.getElementById("cast-btn").classList.remove("active");
-        document.getElementById("epi-btn").classList.remove("active");
-        document.getElementById("detail-btn").classList.add("active");
+        document.getElementById("cast-btun").classList.remove("active");
+        document.getElementById("epi-btun").classList.remove("active");
+        document.getElementById("detail-btun").classList.add("active");
     }
 
 
@@ -64,9 +64,9 @@ function IndividualShow(props) {
 
         <div className='parent--2'>
             <div className='mid-child'>
-                <p className='link active' id="epi-btn" onClick={ShowEpisode}>Episodes</p>
-                <p className='link' id="cast-btn" onClick={ShowCast}>Cast</p>
-                <p className='link' id="detail-btn" onClick={ShowDetails}>Details</p>
+                <p className='link active' id="epi-btun" onClick={openEpisode}>Episodes</p>
+                <p className='link' id="cast-btun" onClick={openCast}>Cast</p>
+                <p className='link' id="detail-btun" onClick={openDetails}>Details</p>
             </div>
             {
                 epi && <div className='episodes'>
