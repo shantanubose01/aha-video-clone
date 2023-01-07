@@ -1,11 +1,11 @@
 
-// import IndividualMovie from './components/Individual-Movie/IndividualMovie';
+import IndividualMovie from './components/Individual-Movie/IndividualMovie';
 import IndividualShow from './components/Individual-Show/IndividualShow';
 
 function App() {
   return (
     <div className="App">
-      {/* <IndividualMovie /> */}
+      <IndividualMovie />
       <IndividualShow />
     </div>
   );

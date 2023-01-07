@@ -9,15 +9,18 @@
 .parent-3{
    background-color: rgba(18, 18, 18, 0.881);
    color: white;
-   padding: 1% 0 0 2%;
+   margin-top: -20px;
 }
 .parent-3 h2{
+   margin-left: 26px;
+   margin-bottom: 0;
    font-weight: 600;
 }
 .similar-movie{
-   width: 100%;
+   width: 96%;
    display: flex;
    gap: 10px;
+   margin: auto;
 }
 .similar-movie > div img{
    border-radius: 7px;
