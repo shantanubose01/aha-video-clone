@@ -69,7 +69,16 @@ function IndividualShow(props) {
                 <p className='link' id="detail-btn" onClick={ShowDetails}>Details</p>
             </div>
             {
-                epi && <div></div>
+                epi && <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             }
             {
                 cast && (<div className="cast">
