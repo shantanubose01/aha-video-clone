@@ -42,7 +42,7 @@ function IndividualMovie(props) {
                     <button className='btn-1'>Play Trailor</button>
                     <div style={{display:"inline-block",padding:"10px"}}></div>
                     <button className='btn-2'>Subscribe Now</button><br></br>
-                    <img src="https://tse4.mm.bing.net/th/id/OIP.fwVztmy6PdSo2AvakioFfAAAAA?pid=ImgDet&rs=1" alt="share" className='share'/>
+                    <img src="https://cdn1.iconfinder.com/data/icons/social-circle-2-1/72/Share-512.png" alt="share" className='share'/>
                     <p style={{fontSize:"11px"}}>Share</p>
                 </div>
             </div>
