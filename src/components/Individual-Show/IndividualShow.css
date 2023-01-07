@@ -70,7 +70,7 @@
 }
 .cast{
     display: flex;
-    padding: 30px;
+    padding: 2% 0 1% 2%;
     gap: 10px;
 }
 .cast > div img{
@@ -87,6 +87,27 @@ li{
 }
 .det{
     display: flex;
-    padding: 30px;
+    padding: 2% 0 1% 2%;
     gap: 25px;
+}
+.episodes{
+    display: grid;
+    gap: 20px;
+    padding: 2% 0 1% 2%;
+}
+.episodes > div{
+    display: flex;
+    gap: 20px;
+}
+.episodes > div img{
+    border-radius: 10px;
+}
+.head{
+    font-size: 20px;
+}
+.mid{
+    font-size: 18px;
+    font-weight: 500;
+    color: grey;
+    margin-top: -15px;
 }

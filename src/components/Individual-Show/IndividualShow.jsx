@@ -69,15 +69,71 @@ function IndividualShow(props) {
                 <p className='link' id="detail-btn" onClick={ShowDetails}>Details</p>
             </div>
             {
-                epi && <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                epi && <div className='episodes'>
+                    <div>
+                        <img src="https://image-resizer-cloud-api.akamaized.net/image/E61A5134-85D3-448B-A0D2-A9351E7A29F0/0-16x9.jpg?width=240" alt="episode" width="220px" height="130px"/>
+                        <div>
+                            <p className='head'>1. Unstoppable 2 Episode 1</p>
+                            <p className='mid'>Episode 1 | 1hr 19min</p>
+                            <p className='bottom'>AP's former chief minister Sri Nara Chandrababu Naidu and his son Nara Lokesh attended as guests.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://image-resizer-cloud-api.akamaized.net/image/7B660DC7-28A6-45DF-8511-46002B1FE2EF/0-16x9.jpg?width=240" alt="episode" width="220px" height="130px"/>
+                        <div>
+                            <p className='head'>2. Unstoppable 2 Episode 2</p>
+                            <p className='mid'>Episode 2 | 1hr 17min</p>
+                            <p className='bottom'>God of Masses - Nandamuri Balakrishna garu meets the Young & Energetic Guests, Mass ka Dass <br></br>Vishwak Sen & Mass ka Boss Siddu Jonnalagadda in this Blockbuster Entertainer Episode to talk their<br></br> hearts out.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://image-resizer-cloud-api.akamaized.net/image/AF11E02F-1F87-4FCD-8D70-17829ADF92E6/0-16x9.jpg?width=240" alt="episode" width="220px" height="130px"/>
+                        <div>
+                            <p className='head'>3. Unstoppable 2 Episode 3</p>
+                            <p className='mid'>Episode 3 | 1hr 4min</p>
+                            <p className='bottom'>The most eligible bachelors of Tollywood made some noise with NBK and spilled some secrets and <br></br>talked about their love/life/marriage .</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://image-resizer-cloud-api.akamaized.net/image/BF9B7EFB-1336-457A-AAEB-23C3C5E76E3B/0-16x9.jpg?width=240" alt="episode" width="220px" height="130px"/>
+                        <div>
+                            <p className='head'>4. Unstoppable 2 Episode 4</p>
+                            <p className='mid'>Episode 4 | 1hr 7min</p>
+                            <p className='bottom'>What started out as 3 friends enjoying their life at Nizam college turned out to be a fun-filled episode.<br></br>As they take you along the memory lane with exciting conversations about their youth and political<br></br>experiences, this episode is definitely a fascinating watch.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://image-resizer-cloud-api.akamaized.net/image/4A04CD85-8FD6-4E15-A9F4-740F75B8967F/0-16x9.jpg?width=240" alt="episode" width="220px" height="130px"/>
+                        <div>
+                            <p className='head'>5. Unstoppable 2 Episode 5</p>
+                            <p className='mid'>Episode 5 | 1hr 13min</p>
+                            <p className='bottom'>Celebrating NTR's 100th birthday and 90 years of Telugu Cinema with fun bantering conversations with<br></br> the men behind the magic!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://image-resizer-cloud-api.akamaized.net/image/B99C8C69-FB70-4C17-B17A-DEEE5C0FF82E/0-16x9.jpg?width=240" alt="episode" width="220px" height="130px"/>
+                        <div>
+                            <p className='head'>6. Unstoppable 2 Episode 6</p>
+                            <p className='mid'>Episode 6 | 1hr 7min</p>
+                            <p className='bottom'>'Naari Naari Naduma Nandamuri' - Watch and Enjoy Balayya's FUN-tastic moments with the Beauty <br></br>Queens.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://image-resizer-cloud-api.akamaized.net/image/0E441AF9-EB39-4A16-B48B-61464EB72E97/0-16x9.jpg?width=240" alt="episode" width="220px" height="130px"/>
+                        <div>
+                            <p className='head'>7. The Bahubali Episode - Part 1</p>
+                            <p className='mid'>Episode 7 | 54min</p>
+                            <p className='bottom'>The time has come for you to find out everything you wanted to know about our DARLING, Prabhas<br></br> all this time. And having Bahubali meet Baala Nandamuri makes the show an unstoppable allari.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://image-resizer-cloud-api.akamaized.net/image/4D314A9F-A84F-4AFA-986A-EEFAACD370C6/0-16x9.jpg?width=240" alt="episode" width="220px" height="130px"/>
+                        <div>
+                            <p className='head'>8. The Bahubali Episode - Part 2</p>
+                            <p className='mid'>Episode 8 | 54min</p>
+                            <p className='bottom'>Lastly, let's ask and find out what remains about our DARLING, Prabhas all this time - The Unstoppable Conclusion .</p>
+                        </div>
+                    </div>
                 </div>
             }
             {

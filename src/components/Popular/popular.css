@@ -1,18 +1,16 @@
 .parent-4{
     background-color: rgba(18, 18, 18, 0.881);
     color: white;
+    padding: 0 0 0 2%;
     margin-top: -20px;
 }
 .parent-4 h2{
-    margin-left: 26px;
     font-weight: 600;
-    margin-bottom: 0;
 }
 .popular-movie{
-    width: 96%;
+    width: 100%;
     display: flex;
     gap: 10px;
-    margin: auto;
 }
 .popular-movie > div img{
     border-radius: 7px;
