@@ -5,11 +5,16 @@ import HorizontalListWide from "../../components/List/HorizontalListWide";
 import style from "./Home.module.css";
 import Slider from "../../components/Carousel/Slider";
 import { useState } from "react";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const Home = () => {
     const[loading, setLoading] = useState(true);
     let id = 0;
   return (
+    <>
+    <Header/>
+    
     <div className={style.homeDivClass} id={style.homeDivID}>
       <Slider />
       <HorizontalListTall
@@ -67,6 +72,8 @@ const Home = () => {
         url="https://api.themoviedb.org/3/movie/popular?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=te&page=2"
       />
     </div>
+    <Footer/>
+    </>
   );
 };
 

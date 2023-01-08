@@ -5,7 +5,7 @@ import style from "./Search.module.css";
 const Results = (props) => {
   return (
     <div>
-      <p>Showing Results for <strong>{props.query}</strong></p>
+     <p className={style.para}>Showing Results for <strong className={style.strong}>{props.query}</strong></p>
       <div className={style.results}> 
         {props.data.map((e, i) => {
             console.log(e);

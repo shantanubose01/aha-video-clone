@@ -1,10 +1,14 @@
 import HorizontalListTall from "../../components/List/HorizontalListTall";
 import HorizontalListWide from "../../components/List/HorizontalListWide";
 import Slider from "../../components/Carousel/Slider";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const Movies = (props) => {
   let id = 0;
   return (
+    <>
+    <Header/>
     <div>
       <Slider />
       <HorizontalListTall
@@ -69,6 +73,8 @@ const Movies = (props) => {
         url="https://api.themoviedb.org/3/movie/popular?api_key=5b2334617cd63be51871f0ff36fb3b3c&with_original_language=te&page=2"
       />
     </div>
+    <Footer/>
+    </>
   );
 };
 

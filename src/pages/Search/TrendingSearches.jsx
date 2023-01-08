@@ -57,7 +57,7 @@ const data = [
 const TrendingSearches = (props) => {
   return (
     <>
-      <h1>Trending Searches</h1>
+      <h1 className={style.h1} style={{paddingLeft:"50px"}}>Trending Searches</h1>
       <div className={style.trending}>
         {data.map((e, i) => {
           return (

@@ -3,6 +3,8 @@ import "../Individual-Show/IndividualShow.css"
 import { useState } from 'react';
 import Similar from '../Similar/Similar';
 import Popular from '../Popular/Popular';
+import Header from '../Header';
+import Footer from '../Footer';
 
 function IndividualShow(props) {
     const [cast,setCast] = useState(false);
@@ -38,6 +40,8 @@ function IndividualShow(props) {
 
 
     return (
+        <>
+        <Header/>
         <div className='main'>
         <div className='parent--1'>
             <div className='child--1'>
@@ -51,11 +55,11 @@ function IndividualShow(props) {
                     <p style={{border:"1.5px solid grey",display:"inline",fontSize:"10px",padding:"3px 6px",borderRadius:"5px"}}>7+</p>
                     <h2 style={{color:"grey",margin:"9px 0 -4px 0"}}>Unstoppable</h2>
                     <h1 style={{margin:"5px 0 -12px 0"}}>The Bahubali Episode - <br></br>Part 2</h1>
-                    <p style={{color:"grey",fontSize:"14px",fontWeight:"500"}}>2022 • 54min • 2 Seasons • Talk Show <br></br>Humorous • Exciting</p>
+                    <p style={{color:"grey",fontSize:"14px",fontWeight:"500",marginTop:"10px"}}>2022 • 54min • 2 Seasons • Talk Show <br></br>Humorous • Exciting</p>
                     <p style={{fontSize:"14px",fontWeight:"400"}}>Lastly, let's ask and find out what remains about our DARLING,<br></br>Prabhas all this time - The Unstoppable Conclusion .</p>
                     <button className='btn'>Subscribe Now</button><br></br>
-                    <img src="https://cdn1.iconfinder.com/data/icons/social-circle-2-1/72/Share-512.png" alt="share" className='share-'/>
-                    <p style={{fontSize:"11px"}}>Share</p>
+                    {/* <img src="https://cdn1.iconfinder.com/data/icons/social-circle-2-1/72/Share-512.png" alt="share" className='share-'/>
+                    <p style={{fontSize:"11px"}}>Share</p> */}
                 </div>
             </div>
         </div>
@@ -170,6 +174,8 @@ function IndividualShow(props) {
         <Popular />
         
         </div>
+        <Footer/>
+        </>
     );
 }
 

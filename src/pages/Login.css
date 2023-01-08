@@ -218,8 +218,10 @@ body{
 }
 .go-btn{
     width: 40px;
-    top: 64px;
-    position:relative;
+    top: 30px;
+    left: 0;
+    position: relative;
+    margin-left: -40px;
 }
 .otp-verify-text{
     color: #fff;

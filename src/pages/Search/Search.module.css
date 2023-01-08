@@ -3,10 +3,13 @@
     /* gap:8px; */
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-left: 50px;
 }
-h1, p, strong{
+.para, .strong{
     color: white;
-}
-p, strong{
     font-size: xx-large;
+}
+.h1{
+    color: white;
+   
 }

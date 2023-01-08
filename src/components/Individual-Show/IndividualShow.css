@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-top: 35px;
 }
 .cs{
     background-image: linear-gradient(75deg,#000 3.89%,transparent 94.59%);
@@ -43,7 +44,7 @@
     background-color: rgba(18, 18, 18, 0.881);
     color: white;
     margin-top: -20px;
-    padding-top: 20px;
+    padding-top: 35px;
     
 }
 .mid-child{

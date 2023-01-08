@@ -8,8 +8,8 @@ function HorizontalCard(props) {
 
     const handleClick = (e) =>{
         // console.log(id)
-        localStorage.setItem("tmdbID", id.toString());
-        navigate("/player");
+        // localStorage.setItem("tmdbID", id.toString());
+        navigate("/moviepage");
     }
 
     return ( 

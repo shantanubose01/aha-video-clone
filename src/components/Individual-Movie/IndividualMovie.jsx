@@ -3,11 +3,13 @@ import "../Individual-Movie/individualMovie.css"
 import { useState } from 'react';
 import Similar from '../Similar/Similar';
 import Popular from '../Popular/Popular';
+import Header from '../Header';
+import { useNavigate } from 'react-router-dom';
 
 function IndividualMovie(props) {
     const [cast,setCast] = useState(true);
     const [detail,setDetail] = useState(false);
-
+     const navigate = useNavigate() ;
 
     const ShowCast = (e)=>{
        e.preventDefault();
@@ -22,9 +24,14 @@ function IndividualMovie(props) {
         document.getElementById("cast-btn").classList.remove("active-link");
         document.getElementById("detail-btn").classList.add("active-link");
     }
+    const handleClick = ()=>{
+      navigate("/player")
+    }
 
 
     return (
+        <>
+        <Header/>
         <div className='boss'>
         <div className='parent'>
             <div className='child-1'>
@@ -35,15 +42,15 @@ function IndividualMovie(props) {
                     <div style={{display:"inline",padding:"7px"}}></div>
                     <p style={{border:"1.5px solid grey",display:"inline",fontSize:"10px",padding:"3px 10px",borderRadius:"5px"}}>A</p>
                     <h1 style={{margin:"5px 0 -10px 0"}}>Masooda</h1>
-                    <p style={{color:"grey",fontSize:"14px",fontWeight:"500"}}>2022 . 2hr 40min . Horror Thriller<br></br>
+                    <p style={{color:"grey",fontSize:"14px",fontWeight:"500", marginTop:"15px"}}>2022 . 2hr 40min . Horror Thriller<br></br>
                         Mystery . Suspenseful
                     </p>
                     <p style={{fontSize:"13px",fontWeight:"500"}}>Neelam a single mother with the help of meek and coward neighbour Gopi struggles <br></br>to save her possessed daughter Nazia from the clutches of an evil force.</p>
-                    <button className='btn-1'>Play Trailor</button>
+                    <button className='btn-1' onClick={handleClick}>Play Trailor</button>
                     <div style={{display:"inline-block",padding:"10px"}}></div>
                     <button className='btn-2'>Subscribe Now</button><br></br>
-                    <img src="https://cdn1.iconfinder.com/data/icons/social-circle-2-1/72/Share-512.png" alt="share" className='share'/>
-                    <p style={{fontSize:"11px"}}>Share</p>
+                    {/* <img src="https://cdn1.iconfinder.com/data/icons/social-circle-2-1/72/Share-512.png" alt="share" className='share'/>
+                    <p style={{fontSize:"11px"}}>Share</p> */}
                 </div>
             </div>
         </div>
@@ -104,6 +111,7 @@ function IndividualMovie(props) {
         <Popular />
         
         </div>
+        </>
     );
 }
 
