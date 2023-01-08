@@ -1,0 +1,9 @@
+.modal-backdrop {
+    background-color: black;
+    opacity: 0.9 !important;
+  }
+  .modal-content {
+    background-color: #000;
+    color: #fff;
+  }
+  

@@ -1,0 +1,53 @@
+.inputbase{
+    width: 370px;
+    border: 0;
+    height: 30px;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    color:"white";
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+    background: linear-gradient(139.8deg, rgba(255,255,255,0.2) 10.38%, rgba(255,255,255,0) 137.67%);
+    border-radius: 6px;
+}
+.inputbase:focus{
+    outline: none;
+}
+*{
+    color: white;
+}
+.applybtn{
+    background: #1a1d1e;
+    border: 0.792308px solid #35393f;
+    box-sizing: border-box;
+    box-shadow: 0px 3.16923px 3.16923px rgb(0 0 0 / 25%);
+    border-radius: 6px;
+    padding: 10px;
+    display: table-cell;
+    min-width: 80px;
+    white-space: nowrap;
+}
+.paybtn{
+    padding: 9px 15px;
+    height:44px ;
+    white-space: normal;
+   width: 208px;
+    background: linear-gradient(180deg, #b61a09 -86.4%, #ff6d2e 100%);
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+.foot{
+    font-size: 12px;
+    line-height: 18px;
+    color: #7f7e86 !important;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
