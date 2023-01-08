@@ -72,6 +72,7 @@ const ListShowsTall = (props) => {
               image={imgurl}
               title={e.title || e.name}
               key={i}
+              id={e.id}
             />
           );
         })}
