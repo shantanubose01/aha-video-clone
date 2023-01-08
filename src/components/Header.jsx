@@ -1,9 +1,14 @@
 import React,{useState} from "react";
 import {Link} from 'react-router-dom';
 import './Header.css'
+import {AiOutlineHome} from 'react-icons/ai';
+import {TiTick} from 'react-icons/ti';
+import {FiSearch,FiMenu} from 'react-icons/fi';
+
 
 function Header(){
     const[sign, setSign]= useState(false);
+   
     return(
         <>
         <div className="header-container">
@@ -28,8 +33,37 @@ function Header(){
         </div>
         
     </div>
-    
+
+
+    {/* Another Navbar
+    {/* <div> Hello</div>  */}
+     <div className="small-screen-nav">
+    <div className="another-nav">
+        <div style={{width:"20px"}}></div>
+        <div className="nav-logo"></div>
+        <div className="lang-icon"></div>
+    </div>
+    <div className="category-cont">
+    <Link to="/"> All</Link>
+        <Link to="/movies">Movies</Link>
+        <Link to="/show">Show</Link>
+        <Link to="/kids">Kids</Link>
+    </div>
+    </div>
+     
+     {/* Bottom Navbar */}
+     <div className="bottom-nav">
+        <div className="bottom-nav-items" >
+        <Link to= '/'><div className="bottom-icons" style={{color:"#fff"}}>  <AiOutlineHome style={{color:"#e66625"}} /> Home</div></Link> 
+         <Link to='/myaha'><div className="bottom-icons"> <TiTick/> My aha</div></Link>
+         <Link to='/search'><div className="bottom-icons">  <FiSearch/> Search</div></Link>
+         <Link to ='/menu'><div className="bottom-icons"> <FiMenu/> Menu</div></Link>
+        </div>
+     </div>
+
         </>
+
+        
     )
 }
 

@@ -12,11 +12,17 @@
     overflow: hidden;
     z-index: 5;
 }
-
+.small-screen-nav{
+    display:none;
+}
+.bottom-nav{
+    display: none;
+}
 .left{
     display: flex;
     justify-content: space-around;
     background-color: black;
+    /* background: linear-gradient(rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0)); */
     width: 50%;
     gap: 4%;
     align-items: center;
@@ -91,4 +97,77 @@ a{
     color: white;
 }
 
+.another-nav{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+}
+.nav-logo{
+    background-image: url(https://www.aha.video/aha-logo.db810aeaa42b356a86a7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* margin-right: 30px; */
+    cursor: pointer;
+    height: 33px;
+    width: 60px;
+}
+.lang-icon{
+    height: 24px;
+    width: 24px;
+    /* margin-right: 32px; */
+    background-image: url(https://www.aha.video/language-icon.ef88ebcc6b1bcda97fc4.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+}
+.category-cont{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+
+/* Bottom Navbar css */
+.bottom-nav{
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(180deg,#3b4046 9.38%,#2d3037);
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    bottom: 0;
+    padding: 15px 0;
+    z-index: 20;
+    border-radius: 25px 25px 0 0;
+}
+.bottom-nav-items{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.bottom-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(129, 125, 125);
+}
+@media screen  and (max-width:900px) {
+    .header-container{
+        display: none;
+    }
+    .small-screen-nav{
+        display:block;
+        z-index: 15;
+        padding: 0;
+    margin-top: 0;
+    height: 5em;
+    font-size:1em;
+    cursor: pointer;
+    }
+    .bottom-nav{
+        display: block;
+    }
+}
 
