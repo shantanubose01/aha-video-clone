@@ -1,11 +1,14 @@
 import { useState  } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import {useDispatch,useSelector} from 'react-redux';
+import {loginAuth,otpPage} from '../redux/AuthAction'
 import './Login.css';
 
 function Login (){
-  const[login,setLogin]= useState(true);
-    const [otp, setOtp] = useState(false);
+   const dispatch= useDispatch();
+   const loginVal= useSelector((storedata)=>{ return storedata.loginPage});
+   const otpVal= useSelector((storedata)=>{ return storedata.otpSection})
     const[input,setInput]= useState("");
     const[mobile,setMobile]= useState("");
     const userMobile= JSON.parse(localStorage.getItem("mobile"));
@@ -15,7 +18,11 @@ const verifyOTP=(e)=>{
     const userOTP= JSON.parse(localStorage.getItem("otp"));
     if(userOTP===input){
         alert("OTP verified successfully!")
+        dispatch(loginAuth());
         nav("/");
+    }
+    else{
+      alert("Invalid OTP")
     }
 }
     let generateOTP = (otpVerify) => {
@@ -38,16 +45,19 @@ const verifyOTP=(e)=>{
        otpVerify= generateOTP(otpVerify);
        localStorage.setItem("otp",JSON.stringify( otpVerify));
        localStorage.setItem("mobile",JSON.stringify(mobile));
-       setLogin(!login);
-       setOtp(!otp);
-       console.log(login);
-       console.log("otp"+otp);
-        alert(otpVerify);
+       dispatch(otpPage());
+        alert("Your verification code: "+otpVerify);
       
+      }
+      const resendOTP=()=>{
+        let otpVerify='';
+        otpVerify= generateOTP(otpVerify);
+        localStorage.setItem("otp",JSON.stringify( otpVerify));
+        alert("Your verification code: " + otpVerify);
       }
  return( 
  <>
-    {login && 
+    {loginVal && 
     <div className="login">
     <div className="login-logo"></div>
     <div className="loginCard">
@@ -70,7 +80,7 @@ const verifyOTP=(e)=>{
                    </div>
                    <svg width="2" height="31" viewBox="0 0 2 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0V30.5" stroke="white"></path></svg>
                    <div className="contact-cont">
-                     <input type="number" name="contact" id="contact" className="contact-inp login-no-inp" required  onChange={(e)=>{setMobile(e.target.value)}}/>
+                     <input type="tel" name="contact" id="contact" className="contact-inp login-no-inp" maxLength="10" required  onChange={(e)=>{setMobile(e.target.value)}}/>
                    </div>
                   <div className="proceed-btn-Cont">
                      <input type="submit" value="Proceed" name="proceed" id="proceed" />
@@ -99,7 +109,7 @@ const verifyOTP=(e)=>{
     </div>   
 </div>
 }
-{otp &&  <div>
+{otpVal &&  <div>
             <div className="otp-logo"></div>
             <div className="otpCard">
             <div className="otpCardCont">
@@ -122,7 +132,7 @@ const verifyOTP=(e)=>{
             </form>
             <div className="otp-resend">
                 Resend OTP
-                <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                <svg onClick={resendOTP} width="7" height="12" viewBox="0 0 7 12" fill="none"
                  xmlns="http://www.w3.org/2000/svg"><path  d="M0.719671 10.7197C0.426777 11.0126 0.426777 11.4874 0.719671 11.7803C1.01256 12.0732 1.48744 12.0732 1.78033 11.7803L6.78033 6.78033C7.07322 6.48744 7.07322 6.01256 6.78033 5.71967L1.78033 0.719669C1.48744 0.426775 1.01257 0.426775 0.719672 0.719669C0.426778 1.01256 0.426778 1.48744 0.719672 1.78033L5.18934 6.25L0.719671 10.7197Z" fill="#ECECEC"></path></svg>
             </div>
             <div className="terms-service">By creating an account you adhere to the <br /> <span>Terms of Service </span>

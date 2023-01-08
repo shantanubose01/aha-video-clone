@@ -1,14 +1,17 @@
-import React,{useState} from "react";
+import React from "react";
 import {Link} from 'react-router-dom';
 import './Header.css'
 import {AiOutlineHome} from 'react-icons/ai';
 import {TiTick} from 'react-icons/ti';
 import {FiSearch,FiMenu} from 'react-icons/fi';
+import { useDispatch,useSelector } from "react-redux";
+import { logout } from "../redux/AuthAction";
+
 
 
 function Header(){
-    const[sign, setSign]= useState(false);
-   
+    const auth = useSelector((data)=>{return data.auth})
+   const dispatch= useDispatch();
     return(
         <>
         <div className="header-container">
@@ -27,7 +30,7 @@ function Header(){
        
        
         <Link to="/subscribe"><button  style={{marginLeft: "2em"}} className="subscribe-btn">Subscribe Now</button></Link>
-            <div style={{marginLeft: "2em"}} className="signin"><img src="https://www.aha.video/assets/icons/svg/avatar_profile.svg" alt="user" /> {!sign ?<Link to ={"/login"}> <p  >Sign In</p> </Link>: <p  style={{color:"white"}}>Logout</p>}
+            <div  className="signin"><img src="https://www.aha.video/assets/icons/svg/avatar_profile.svg" alt="user" /> {!auth ?<Link to ={"/login"}> <p  >Sign In</p> </Link>: <p onClick={()=>{dispatch(logout())}} style={{color:"white"}}>Logout</p>}
                 
                 </div>
         </div>
