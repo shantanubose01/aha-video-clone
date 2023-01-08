@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import TrendingSearches from "./TrendingSearches";
+import Results from "./Results";
+import style from "./Search.module.css";
 
 const Search = () => {
   const [searchparams, setsearchparams] = useSearchParams();
@@ -8,12 +11,12 @@ const Search = () => {
 
   useEffect(() => {
     const getData = setTimeout(async () => {
-      try {
+      if(query) try  {
         let res = await fetch(
           `https://api.themoviedb.org/3/search/movie?api_key=5b2334617cd63be51871f0ff36fb3b3c&query=${query}`
         );
         let { results } = await res.json();
-        console.log(results);
+        // console.log(results);
         setMovies(results);
       } catch (error) {
         console.log(error);
@@ -38,13 +41,14 @@ const Search = () => {
           else if (e.poster_path)
             url = `https://image.tmdb.org/t/p/w1280${e.poster_path}`;
           return (
-            <div key={i}>
-              <h1>{e.title}</h1>
-              <img src={url} />
-            </div>
+            <Results 
+              query={query}
+              data = {movies}
+            />
           );
         })}
       </div>
+      <TrendingSearches />
     </div>
   );
 };
