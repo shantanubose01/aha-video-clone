@@ -4,6 +4,7 @@ import ViewPlans from "./ViewPlans";
 import Button from 'react-bootstrap/Button';
 import SubscriptionConfirm from "./SubscriptionConfirm";
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function SubscriptionPlans(){
   

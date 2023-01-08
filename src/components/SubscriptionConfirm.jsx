@@ -1,6 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import './SubscriptionModal.css'
+import './SubscriptionModal.css' ;
+import { Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function SubscriptionConfirm(props){
     return (
@@ -14,8 +16,8 @@ function SubscriptionConfirm(props){
               </button>
             </div>
             <div className="modal-body ">
-             <div>
-               <img src="699planind.png" width="360px" height="255px" />
+             <div >
+              <a href="payment"> <img src="699planind.png" width="360px" height="255px" /></a>
              </div>
             </div>
             
