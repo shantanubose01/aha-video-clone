@@ -51,7 +51,7 @@ const ListShowsTall = (props) => {
       <div className={style.horizontalList} id={props.id}>
         {data?.map((e, i) => {
             let imgurl;
-            console.log(img);
+            {/* console.log(img); */}
             if(e.poster_path){
                 imgurl = `https://image.tmdb.org/t/p/w1280${e.poster_path}`;
             }
