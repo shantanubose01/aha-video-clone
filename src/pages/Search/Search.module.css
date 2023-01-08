@@ -1,0 +1,12 @@
+.trending, .results{
+    display: flex;
+    /* gap:8px; */
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+h1, p, strong{
+    color: white;
+}
+p, strong{
+    font-size: xx-large;
+}
