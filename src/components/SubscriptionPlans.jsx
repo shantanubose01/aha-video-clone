@@ -6,7 +6,7 @@ import SubscriptionConfirm from "./SubscriptionConfirm";
 import React from 'react'
 
 export default function SubscriptionPlans(){
-    const [modalShow, setModalShow] = React.useState(false);
+  
     document.body.style = 'background: #262629;';
     return (
     <div style={{marginTop:"40px" , marginLeft:"130px", marginRight:"130px"}}>
@@ -20,13 +20,10 @@ export default function SubscriptionPlans(){
       </div>
        <ViewPlans/>
        <SubscriptionFooter/>
-       {/* <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-    </button> */}
-
-      {/* <SubscriptionConfirm
+      
+       <SubscriptionConfirm
         
-      /> */}
+      />
     </div>
     )
 }

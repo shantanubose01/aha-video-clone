@@ -1,6 +1,6 @@
 .modal-backdrop {
     background-color: black;
-    opacity: 1 !important;
+    opacity: 0.9 !important;
   }
   .modal-content {
     background-color: #000;
