@@ -1,9 +1,16 @@
-.trending, .results{
+.trending{
     display: flex;
     /* gap:8px; */
     flex-wrap: wrap;
     margin: 0 auto;
-    padding-left: 50px;
+    padding-left: 100px;
+}
+.results{
+    display: flex;
+    /* gap:8px; */
+    flex-wrap: wrap;
+    margin: 0 auto;
+   
 }
 .para, .strong{
     color: white;

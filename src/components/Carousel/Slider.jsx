@@ -28,7 +28,7 @@ export default function Slider() {
   return (
     <div>
       <div style={containerStyles} className="slider-wrapper">
-        <ImageSlider slides={slides} parentWidth={1400} />
+        <ImageSlider slides={slides} parentWidth={1550} />
       </div>
     </div>
   );

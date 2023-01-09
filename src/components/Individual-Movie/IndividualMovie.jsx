@@ -46,7 +46,7 @@ function IndividualMovie(props) {
                         Mystery . Suspenseful
                     </p>
                     <p style={{fontSize:"13px",fontWeight:"500"}}>Neelam a single mother with the help of meek and coward neighbour Gopi struggles <br></br>to save her possessed daughter Nazia from the clutches of an evil force.</p>
-                    <button className='btn-1' onClick={handleClick}>Play Trailor</button>
+                    <button className='btn-1' onClick={handleClick}>Play Trailer</button>
                     <div style={{display:"inline-block",padding:"10px"}}></div>
                     <button className='btn-2'>Subscribe Now</button><br></br>
                     {/* <img src="https://cdn1.iconfinder.com/data/icons/social-circle-2-1/72/Share-512.png" alt="share" className='share'/>
