@@ -6,8 +6,9 @@ function VerticalCard(props) {
     const navigate = useNavigate();
 
     const handleClick = (e) =>{
-        localStorage.setItem("tmdbID", id.toString());
-        navigate("/player");
+        // localStorage.setItem("tmdbID", id.toString());
+       
+        navigate("/showpage");
     }
     
     return ( 

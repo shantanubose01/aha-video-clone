@@ -5,11 +5,14 @@ import Button from 'react-bootstrap/Button';
 import SubscriptionConfirm from "./SubscriptionConfirm";
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from "./Header";
 
 export default function SubscriptionPlans(){
   
     document.body.style = 'background: #262629;';
     return (
+      <>
+      <Header/>
     <div style={{marginTop:"40px" , marginLeft:"130px", marginRight:"130px"}}>
       <div style={{display:"flex"}}>
         <div style={{marginTop:"12px"}}>
@@ -26,5 +29,6 @@ export default function SubscriptionPlans(){
         
       />
     </div>
+    </>
     )
 }

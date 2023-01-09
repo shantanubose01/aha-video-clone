@@ -6,10 +6,10 @@ export default function ViewPlans(){
              <div style={{width:"433px" , height:"300px", cursor:"pointer"}}  data-toggle="modal" data-target="#exampleModalCenter">
                 <img src="699plan.png" width="100%" height="100%"/>
              </div>
-             <div>
+             <div style={{width:"433px" , height:"300px", cursor:"pointer"}}>
                 <img src="399plan.png" width="100%" height="100%"/>
              </div>
-             <div>
+             <div style={{width:"433px" , height:"300px", cursor:"pointer"}}>
                 <img src="199plan.png" width="100%" height="100%"/>
              </div>
              

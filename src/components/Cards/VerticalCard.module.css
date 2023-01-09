@@ -20,7 +20,7 @@
    /* max-height: 240px;
    max-width: 160px; */
 }
-img{
+.img{
     display: block;
     width: 160px;
     object-fit: fill;

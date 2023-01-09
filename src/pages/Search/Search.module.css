@@ -1,12 +1,22 @@
-.trending, .results{
+.trending{
     display: flex;
     /* gap:8px; */
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-left: 100px;
 }
-h1, p, strong{
+.results{
+    display: flex;
+    /* gap:8px; */
+    flex-wrap: wrap;
+    margin: 0 auto;
+   
+}
+.para, .strong{
     color: white;
-}
-p, strong{
     font-size: xx-large;
+}
+.h1{
+    color: white;
+   
 }

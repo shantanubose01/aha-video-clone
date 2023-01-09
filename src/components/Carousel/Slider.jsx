@@ -22,12 +22,13 @@ export default function Slider() {
     width: "100%",
     height: "450px",
     margin: "0 auto",
+    marginTop:"50px"
   };
 
   return (
     <div>
       <div style={containerStyles} className="slider-wrapper">
-        <ImageSlider slides={slides} parentWidth={1400} />
+        <ImageSlider slides={slides} parentWidth={1550} />
       </div>
     </div>
   );

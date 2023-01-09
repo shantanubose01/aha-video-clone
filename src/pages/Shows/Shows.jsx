@@ -1,10 +1,14 @@
 import ListShowsTall from "./ListShowsTall";
 import ListShowsWide from "./ListShowsWide";
 import Slider from "../../components/Carousel/Slider";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const Shows = () => {
   let id = 0;
   return (
+    <>
+    <Header/>
     <div>
       <Slider />
       <ListShowsTall
@@ -68,6 +72,8 @@ const Shows = () => {
 
       
     </div>
+    <Footer/>
+    </>
   );
 };
 

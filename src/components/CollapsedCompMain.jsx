@@ -31,7 +31,7 @@ export function CollapsedCompMain({image,text}){
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      <input placeholder='Enter UPI ID' type="text" />
+      <input placeholder='Enter UPI ID' type="text" style={{color:"black"}} />
       <button style={verifyupistyle} onClick={()=>{
         alert('UPI ID VERIFIED!')
       }}>Verify UPI ID</button>
