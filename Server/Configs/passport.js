@@ -9,7 +9,7 @@ const GOOGLE_CLIENT_SECRET = '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' ;
 passport.use(new GoogleStrategy({
     clientID: GOOGLE_CLIENT_ID,
     clientSecret: GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:3030/google/callback",
+    callbackURL: "https://tan-horse-sari.cyclic.app/google/callback",
     scope: ['profile']
   },
   async function(accessToken, refreshToken, profile, cb) {
