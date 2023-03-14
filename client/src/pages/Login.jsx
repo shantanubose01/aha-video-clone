@@ -13,6 +13,10 @@ function Login (){
     const[mobile,setMobile]= useState("");
     const userMobile= JSON.parse(localStorage.getItem("mobile"));
     const nav= useNavigate();
+    const googleAuth = ()=>{
+      dispatch(loginAuth());
+      window.open('https://tan-horse-sari.cyclic.app/google/callback', '_self');
+    }
 const verifyOTP=(e)=>{
     e.preventDefault();
     const userOTP= JSON.parse(localStorage.getItem("otp"));
@@ -99,7 +103,7 @@ const verifyOTP=(e)=>{
                     <div className="login-icon-fb"></div>
                     <div className="icon-text">Facebook</div>
                 </div>
-                <div className="loginOpts" >
+                <div className="loginOpts" onClick={googleAuth} >
                     <div className="login-icon-google"></div>
                     <div className="icon-text">Google</div>
                 </div>

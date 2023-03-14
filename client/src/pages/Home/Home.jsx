@@ -21,17 +21,17 @@ const Home = () => {
         id={id++}
         title="New Releases"
         // url=" https://api.themoviedb.org/4/list/6564?page=1&api_key=584d1b1dc55719efed1f590d859903af"
-        url="https://api.themoviedb.org/3/movie/now_playing?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=ta"
+        url="https://tan-horse-sari.cyclic.app/newrelease"
       />
       <HorizontalListTall
         id={id++}
         title="Blockbusters on aha"
-        url="https://api.themoviedb.org/3/movie/popular?api_key=584d1b1dc55719efed1f590d859903af&with_original_language=te&page=3"
+        url="https://tan-horse-sari.cyclic.app/blockbuster"
       />
       <HorizontalListTall
         id={id++}
         title="Latest HollyWood Movies in Tamil"
-        url="https://api.themoviedb.org/4/discover/movie?sort_by=popularity.desc&api_key=1cf50e6248dc270629e802686245c2c8"
+        url="https://tan-horse-sari.cyclic.app/hollywood"
       />
       <HorizontalListWide 
         id={id++}
